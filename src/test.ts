@@ -1,17 +1,8 @@
-let foo: string
-let bar: boolean
-let baz: number
-let qux: string[]
-let quuz: [number, string]
-let corge: { [key: number]: string }
-let grault: Set<number>
+let a: [number, string]
+a = [3, 'abc']
+let b: [string, boolean, number]
+b = ['abc', false, 123]
 
-foo = 'ABC'
-bar = true
-baz = 123
-qux = ['a', 'b', 'c']
-quuz = [1, 'abc']
-corge = { 123: 'abc', 456: 'def' }
-grault = new Set([1, 2, 3])
+console.log(a[1])
+console.log(b[2])
 
-console.log(foo)

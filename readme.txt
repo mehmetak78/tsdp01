@@ -17,8 +17,7 @@
     "exclude": [
     "node_modules" // would be the default
     ]
-- auto compile
-    tsc -w
+
 - auto run in changes
     npm install --save-dev nodemon
 - start script
@@ -26,4 +25,5 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "nodemon ./dist/test.js"
       },
+- tsc -w
 - npm start
