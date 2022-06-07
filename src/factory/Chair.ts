@@ -1,5 +1,5 @@
-import IChair from "./chairInterface";
-import {dimension} from "./dimension";
+import IChair from "./IChair";
+import {dimension} from "./Dimension";
 
 export default class Chair implements IChair {
     height = 0;

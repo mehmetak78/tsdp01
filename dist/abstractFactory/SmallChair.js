@@ -3,13 +3,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const chair_1 = __importDefault(require("./chair"));
-class MediumChair extends chair_1.default {
+const Chair_1 = __importDefault(require("./Chair"));
+class SmallChair extends Chair_1.default {
     constructor() {
         super();
-        this.height = 60;
-        this.width = 60;
-        this.depth = 60;
+        this.name = 'SmallChair';
+        this.height = 40;
+        this.width = 40;
+        this.depth = 40;
     }
 }
-exports.default = MediumChair;
+exports.default = SmallChair;

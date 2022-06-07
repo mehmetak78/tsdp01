@@ -3,18 +3,18 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const bigChair_1 = __importDefault(require("./bigChair"));
-const mediumChair_1 = __importDefault(require("./mediumChair"));
-const smallChair_1 = __importDefault(require("./smallChair"));
+const BigChair_1 = __importDefault(require("./BigChair"));
+const MediumChair_1 = __importDefault(require("./MediumChair"));
+const SmallChair_1 = __importDefault(require("./SmallChair"));
 class ChairFactory {
     static createChair(chairType) {
         switch (chairType) {
             case "BigChair":
-                return new bigChair_1.default();
+                return new BigChair_1.default();
             case "MediumChair":
-                return new mediumChair_1.default();
+                return new MediumChair_1.default();
             case "SmallChair":
-                return new smallChair_1.default();
+                return new SmallChair_1.default();
         }
     }
 }

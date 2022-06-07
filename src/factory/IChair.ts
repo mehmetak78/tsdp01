@@ -1,4 +1,4 @@
-import {dimension} from "./dimension";
+import {dimension} from "./Dimension";
 
 export default interface IChair {
     height: number;

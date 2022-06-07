@@ -1,7 +1,7 @@
-import IChair from "./chairInterface";
-import BigChair from "./bigChair";
-import MediumChair from "./mediumChair";
-import SmallChair from "./smallChair";
+import IChair from "./IChair";
+import BigChair from "./BigChair";
+import MediumChair from "./MediumChair";
+import SmallChair from "./SmallChair";
 
 export default class ChairFactory {
     static createChair(chairType: "BigChair"| "MediumChair" | "SmallChair"): IChair {
