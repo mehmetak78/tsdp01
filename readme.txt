@@ -28,4 +28,4 @@
 - tsc -w
 - npm start
 
-- for different patterns change "start": "nodemon ./dist/test.js" in package.json
+- for different patterns change "start": "nodemon ./dist/test.js" in package.json.
