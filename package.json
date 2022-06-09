@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./dist/singleton/client.js"
+    "start": "nodemon ./dist/decorator/client.js"
   },
   "author": "",
   "license": "ISC",
