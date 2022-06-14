@@ -11,7 +11,7 @@ export default class Folder implements IComponent {
     }
 
     dir(indent: string): void {
-        console.log(`${indent}<DIR>   ${this.name}`);
+        console.log(`${indent}<DIR> ${this.name}`);
         this.components.forEach(component => {
             component.dir(indent + '...')
         })

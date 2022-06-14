@@ -6,7 +6,7 @@ class Folder {
         this.components = [];
     }
     dir(indent) {
-        console.log(`${indent}<DIR>   ${this.name}`);
+        console.log(`${indent}<DIR> ${this.name}`);
         this.components.forEach(component => {
             component.dir(indent + '...');
         });
