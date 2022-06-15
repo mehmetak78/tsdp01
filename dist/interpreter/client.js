@@ -1,0 +1,20 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const Numeral_1 = __importDefault(require("./Numeral"));
+const Add_1 = __importDefault(require("./Add"));
+const Subtract_1 = __importDefault(require("./Subtract"));
+const sentence = '5 + 4 - 3 + 7 - 2';
+console.log(sentence);
+const tokens = sentence.split(' ');
+console.log(JSON.stringify(tokens));
+const expressions = [];
+expressions.push(new Add_1.default(new Numeral_1.default(tokens[0]), new Numeral_1.default(tokens[2])));
+expressions.push(new Subtract_1.default(expressions[0], new Numeral_1.default(tokens[4])));
+expressions.push(new Add_1.default(expressions[1], new Numeral_1.default(tokens[6])));
+expressions.push(new Subtract_1.default(expressions[2], new Numeral_1.default(tokens[8])));
+const expressionsRoot = expressions.pop();
+console.log(expressionsRoot.interpret());
+console.dir(expressionsRoot, { depth: null });
